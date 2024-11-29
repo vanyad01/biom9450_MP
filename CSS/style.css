@@ -1,0 +1,908 @@
+
+/* Legend container */
+.medLegend-div {
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Title styling */
+.legend-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* List container styling */
+.medLegend {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    gap: 15px;
+}
+
+/* Individual legend item */
+#medLegend li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+/* Icon styling */
+.legend-icon {
+    font-size: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+ 
+header {
+    background-color: #fff;
+    color: white;
+    padding: 20px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+.hero-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 870px; 
+    background-image: url('../Images/homepage.jpg'); /*Background image on home screen*/
+    background-size: cover;
+    background-position: center -3px;
+    background-repeat: no-repeat;
+    border-radius: 0px; 
+    margin: 0; 
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+    
+}
+
+/* Parent layout for the form container */
+.config-summary {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.config-summary p{
+    text-align: center;
+}
+}
+/* Grid styling for the form */
+.summary-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 15px;
+}
+
+/* Full-width rows (e.g., submit button) */
+.summary-form .form-row {
+    grid-column: span 2;
+}
+
+/* Label and input alignment */
+.form-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+/* Submit button */
+.submit-row input[type="submit"] {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    background-color: #1EB3A6;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.submit-row input[type="submit"]:hover {
+    background-color: #17A295;
+}
+
+/* Adjust spacing for better readability */
+.summary-form .form-row {
+    margin-bottom: 15px;
+}
+
+
+/* Text overlay */
+.hero-text {
+    color: white;
+    text-align: left;
+    max-width: 50%;
+    padding-left: 80px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); 
+    margin-top: -400px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 25px;
+}
+.logo img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: -10px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribute space between logo, links, and button */
+    align-items: center; /* Vertically center elements */
+    max-width: 1200px; /* Optional: set a max-width to keep the navbar from stretching too wide */
+    margin: 0 auto; /* Center the navbar horizontally */
+}
+.practitioner-navbar {
+    background-color: #E0F7F7; /* Different background */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.practitioner-navbar h2 {
+    color:#17A295;
+}
+.practitioner-navbar ul a{
+    color: #004D4D;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    list-style: none; 
+    margin-left: 0px;
+    flex-grow: 1;
+}
+
+.nav-links li {
+    margin-left: 15px; 
+}
+
+.nav-links a {
+    color: #1EB3A6;
+    text-decoration: none; 
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 18px;
+}
+.cta-button {
+    padding: 10px 20px;
+    background-color: #1EB3A6; /* Button color */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 25px;
+}
+
+.cta-button:hover {
+    background-color: #17A295;
+}
+.cta-button .button {
+    background-color: #1EB3A6; /* Adjust button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button .button:hover {
+    background-color: #17A295; /* Darker color on hover */
+}
+.main-home {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    margin-top: 0px;
+    padding-top: 25px;
+}
+.main-inquiry {
+    background-color: #fff4ef;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align:justify;
+    padding: 20px;
+    border-radius: 0px;
+    display: flex;
+    height: 100vh;
+    margin-top: 0px;
+    flex-direction: column; /* Stack child elements vertically */
+    height: 100vh;  /*Full viewport height */
+    width:auto;
+}
+.contact-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px; /* Add padding for spacing */
+    width: 800px;
+    max-width: 900px;
+    margin: 0 auto; /* Center horizontally */
+    height: auto; /* Let height adjust dynamically */
+    flex-shrink: 0; /* Prevent stretching if in a flex container */
+}
+
+.contact-info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.contact-info ul li i {
+    margin-right: 10px;
+}
+
+.contact-info ul li a {
+    color: #1EB3A6;
+    text-decoration: none;
+}
+
+.contact-info ul li a:hover {
+    text-decoration: underline;
+}
+.contact-form {
+    width: 55%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Allow resizing vertically only */
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #1EB3A6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #17A295;
+} 
+
+main h2 {
+    text-align: center; 
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #777;
+    border-radius: 5px;
+}
+footer p a {
+    text-decoration: none;
+    color: #007bff;
+}
+.container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+.login-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+.login-section {
+    flex: 1; /* Takes up half the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff4ef;
+}
+.login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-form input[type="text"], 
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1EB3A6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+form label {
+    align-items: center;
+    text-align: center;
+}
+.login-form button:hover {
+    background-color: #17A295;
+}
+.image-section {
+    flex: 1; /* Takes up half the screen */
+    background-color: #002b54; /* image background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    background-color: #E0F7F7;
+    width: 240px;
+    padding: 20px;
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar .logo img {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin: 20px 0;
+  }
+  
+  .sidebar nav ul li a {
+    color: #004D4D;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .sidebar .profile-section {
+    margin-top: auto; /* Push profile to the bottom */
+    text-align: center;
+ }
+  
+  .sidebar .profile-section img {
+    width: 80px;
+    border-radius: 50%;
+  }
+  
+  .sidebar .profile-section p {
+    margin: 5px 0;
+    color: #004D4D;
+  }
+  /* Top-bar container to hold search bar and date */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure top bar takes full width */
+    position: sticky; /* Stick it to the top */
+    top: 0; /* Stick to the top of the dashboard */
+    z-index: 10; /* Make sure it stays above other content */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+  /* Search Bar */
+.search-bar {
+    padding: 6px; /* Reduce padding for a smaller input field */
+    font-size: 14px; /* Reduce font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 20px;
+    width: 40%; /* Adjust width to make the search bar smaller */
+}
+/* Styling for the date */
+.date {
+    font-size: 16px;
+    color: #333;
+}
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+  /* Main Dashboard Styling */
+  .main-dashboard {
+    flex: 1;
+    background-color: #F7FAFC;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px 30px; /* Keep padding only on left and right */
+    width: 100%;
+    height: 100vh; /* Fill the full viewport height */
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .main-dashboard h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .info-section {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 20px auto; /* Center the section horizontally and add vertical spacing */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px; /* Keep the section width constrained */
+    height: auto; /* Let the height adjust dynamically based on content */
+    padding-left: 30px;
+    padding-right: 30px;
+    align-self: flex-start; /* Prevent flexbox stretching */
+}
+
+.info-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.message {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.success {
+    color: green;
+}
+.error {
+    color: red;
+}
+
+/* Styling for config-summary section in medication and diet*/
+.config-summary {
+    background-color: #ffffff; /* White background for a clean look */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px; /* Comfortable spacing */
+    max-width: 900px; /* Constrain the section width */
+    width: 100%;
+    margin: 0 auto; /* Center align the section */
+    text-align: justify; /* Align text for better readability */
+}
+
+.config-summary p {
+    font-size: 18px; /* Slightly larger font for readability */
+    margin-bottom: 20px; /* Spacing below the introductory paragraph */
+    color: #555555; /* Subtle text color */
+    line-height: 1.6; /* Increase line height for better readability */
+    text-align: center;
+}
+
+.summary-form {
+    display: flex;
+    flex-direction: column; /* Stack form rows vertically */
+    gap: 20px; /* Add space between form elements */
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    gap: 5px; /* Space between label and input */
+    width: 100%; /* Make it take up the full width of its container */
+    max-width: 900px !important; /* Limit the width for better layout control */
+    align-items: center; /* Center-align items */
+    margin: 0 auto 15px auto; /* Automatically center within the container */
+}
+.form-row label {
+    font-size: 16px; /* Font size for labels */
+    font-weight: bold; /* Make labels bold */
+    color: #333333; /* Darker text color for labels */
+    text-align: center; /* Align labels to the left */
+    width: 100%; /* Full width label alignment */
+}
+
+.form-row input, .form-row select, .form-row textarea {
+    width: 100%; /* Set width to match layout */
+    max-width: 900px; /* Limit the maximum width of inputs */
+    padding: 10px; /* Add padding for comfortable typing */
+    border: 1px solid #cccccc; /* Light gray border */
+    border-radius: 5px; /* Smooth corners */
+    font-size: 16px; /* Consistent font size */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for depth */
+    transition: border-color 0.3s ease; /* Smooth focus effect */
+}
+
+.form-row input:focus, .form-row textarea:focus {
+    border-color: #1eb3a6; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+.radio-group {
+    display: flex;
+    justify-content: space-evenly; /* Space items evenly across */
+    align-items: center; /* Vertically align items */
+    flex-wrap: nowrap; /* Allow wrapping if necessary */
+    gap: 15px; /* Space between radio buttons */
+    margin: 10px 0; /* Spacing around radio buttons */
+    width: 100%;
+}
+/* Center alignment for specific groups */
+.round-selection {
+    text-align: center; /* Center align the entire group */
+    justify-content: center;
+}
+.include-radio-group {
+    display: flex;
+    justify-content: center; /* Center align the group */
+    gap: 15px; /* Add spacing between the radio options */
+    flex-wrap: nowrap; /* Keep options in one row */
+    margin-top: 10px; /* Add spacing above for clarity */
+    text-align: center;
+    justify-content: center;
+}
+
+.radio-group label {
+    font-size: 14px; /* Adjust radio button label size */
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between radio input and label text */
+}
+
+.submit-row {
+    text-align: center;
+}
+
+#submit-form {
+    background-color: #1eb3a6; /* Theme color for button */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 12px 20px; /* Button size */
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 90%; /* Full-width button for alignment */
+    max-width: 400px; /* Limit button width */
+}
+
+#submit-form:hover {
+    background-color: #17a293; /* Darker shade on hover */
+}
+/*Styling for report summary used in medication and diet reports*/
+.report-summary {
+    width: 100%; /* Make the table span the full width of its container */
+    border-collapse: collapse; /* Remove gaps between table cells */
+    margin: 20px 0; /* Add spacing above and below the table */
+    font-size: 16px; /* Adjust font size for readability */
+    text-align: left; /* Align text to the left */
+    background-color: #ffffff; /* White background for the table */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.report-summary th, .report-summary td {
+    padding: 10px 15px; /* Add padding for better spacing */
+    border: 1px solid #ddd; /* Add a light border to separate cells */
+}
+
+.report-summary th {
+    background-color: #1eb3a6; /* Use a theme color for table headers */
+    color: white; /* White text for contrast */
+    font-weight: bold; /* Make headers stand out */
+}
+
+.report-summary tr:nth-child(even) {
+    background-color: #f9f9f9; /* Add alternating row background color */
+}
+
+.report-summary tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.report-summary td {
+    color: #333333; /* Darker text for readability */
+    font-size: 14px; /* Adjust text size */
+}
+
+.no-data-message {
+    font-size: 18px;
+    color: #ff6b6b; /* Optional: Use red for error messages */
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Patient Profile Container */
+.patient-profile {
+    background-color: #ffffff; /* Pure white background for consistency */
+    padding: 20px 25px; /* Comfortable padding */
+    border-radius: 8px; /* Rounded corners for a sleek look */
+    border: 1px solid #e0e0e0; /* Subtle border to match the theme */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 20px auto; /* Center align the section */
+    max-width: 800px; /* Limit width for readability */
+    text-align: left; /* Align content to the left */
+}
+
+/* Profile Header */
+.patient-profile h2 {
+    font-size: 24px; /* Larger font size */
+    color: #1eb3a6; /* Theme color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Patient Container: Flex layout */
+.patient-container {
+    display: flex;
+    gap: 20px; /* Space between image and details */
+    align-items: flex-start; /* Align to the top */
+}
+
+/* Patient Image Styling */
+.patient-image img {
+    border-radius: 8px; /* Subtle rounded corners */
+    width: 180px; /* Fixed image size */
+    height: 180px; 
+    object-fit: cover; /* Ensure proper scaling */
+    border: 1px solid #ccc; /* Subtle border around the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Patient Details Styling */
+.patient-details {
+    font-size: 16px; /* Text size for readability */
+    color: #333; /* Neutral text color */
+    line-height: 1.6; /* Improve readability */
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Space between each detail */
+}
+
+/* Highlighting labels */
+.patient-details p strong {
+    font-weight: bold;
+    color: #1eb3a6; /* Use theme color for labels */
+}
+input[type="submit"]:disabled { 
+    background-color: #8FC4BF;
+}
+
+hr {
+    border: none;
+    background-color: #17A295;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .patient-container {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
+    }
+
+    .patient-image img {
+        width: 150px; /* Adjust image size for smaller screens */
+        height: 150px;
+    }
+
+    .patient-details {
+        align-items: center; /* Center align text for smaller screens */
+        text-align: center;
+    }
+    .config-summary {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .form-row {
+        margin-bottom: 15px; /* Reduce spacing between rows */
+    }
+
+    #submit-form {
+        width: 100%; /* Full-width button on smaller screens */
+    }
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    color: #155724;
+    text-align: center;
+}
+
+.popup a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.popup a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    font-weight: bold;
+    font-size: 1em;
+    color: red;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.delete-container {
+    margin-top: 40px;
+    padding: 20px;
+    background: #fff3f3;
+    border: 1px solid #f8d7da;
+    color: #721c24;
+    border-radius: 5px;
+}
+
+.delete-container button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-container button:hover {
+    background-color: #c82333;
+}
+
+.delete-link {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    background-color: #f8d7da;
+    padding: 10px;
+    color: #721c24;
+    border: 1px solid #f8d7da;
+    text-decoration: none;
+}
+
+.delete-link:hover {
+    background-color: #c82333;
+    color: white;
+}
